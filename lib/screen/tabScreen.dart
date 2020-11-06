@@ -20,13 +20,13 @@ class _TabScreenState extends State<TabScreen> {
           key: scaffoldKey,
           extendBodyBehindAppBar: false,
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(180),
+          preferredSize: Size.fromHeight(210),
             child: Column(
               children:[
               CustomAppbar(scaffoldKey),
               Flexible(
                 child: Container(
-                  height: 80,
+                  height: 200,
                   child: AppBar(
                     elevation: 0.0,
                     backgroundColor: Colors.transparent,

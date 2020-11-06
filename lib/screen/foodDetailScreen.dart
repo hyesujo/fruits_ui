@@ -36,6 +36,7 @@ class _FoodDetailScreenState extends State<FoodDetailScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final Size size =MediaQuery.of(context).size;
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -74,7 +75,7 @@ class _FoodDetailScreenState extends State<FoodDetailScreen> {
               },
               child: Container(
                 width: double.infinity,
-                height: 390,
+                height: size.height * 0.65,
                 decoration: BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage(foods[currentIndex]),
@@ -178,7 +179,7 @@ class _FoodDetailScreenState extends State<FoodDetailScreen> {
                             ),
                             Container(
                               padding: EdgeInsets.only(
-                                  left: MediaQuery.of(context).size.width /2.8),
+                                  left: MediaQuery.of(context).size.width * 0.45),
                               child: Text('\$120',
                                 style: TextStyle(
                                     fontWeight: FontWeight.w600,
@@ -238,7 +239,7 @@ class _FoodDetailScreenState extends State<FoodDetailScreen> {
                                       )
                                     ],
                                   ),
-                                  width: 250,
+                                  width: size.width * 0.75,
                                   height: 55,
                                   decoration: BoxDecoration(
                                      color: Colors.green,

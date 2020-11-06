@@ -4,9 +4,6 @@ import 'package:food_ui/model/dummyData.dart';
 import 'package:food_ui/widget/fruitsCard.dart';
 
 class StaggeredCard extends StatelessWidget {
-  const StaggeredCard({
-    Key key,
-  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
